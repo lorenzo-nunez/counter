@@ -1,1 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
 
+.increment{
+    background-color: green;
+    color: white;
+}
+
+.decrement{
+    background-color: red;
+    color: white;
+}
+
+.button{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.countContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh
+}
