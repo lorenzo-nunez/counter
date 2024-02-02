@@ -19,3 +19,8 @@
   background-color: red;
   color: white;
 }
+
+.input[type=text] {
+    width:fit-content
+
+}

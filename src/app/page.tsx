@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 
 function App() {
   let [count, setCount] = useState(0);
+  let [text, setText] = useState("Enter text here...");
 
   return (
     <div className={styles.container}>
@@ -26,12 +27,13 @@ function App() {
         <div className={styles.section}>
           <p>Count: {count}</p>
         </div>
-        <div>
-          <input type="text" id="myText"></input>
-          <button>Display Text</button>
+        <div className={styles.section}>
+          <label>
+            <input value={text} onChange={(e) => setText(e.target.value)} />
+          </label>
         </div>
         <div className={styles.section}>
-          <p>"myText"</p>
+          <p>Your text: {text}</p>
         </div>
       </div>
     </div>
