@@ -2,7 +2,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 
-function Counter() {
+function App() {
   let [count, setCount] = useState(0);
 
   return (
@@ -26,9 +26,16 @@ function Counter() {
         <div className={styles.section}>
           <p>Count: {count}</p>
         </div>
+        <div>
+          <input type="text" id="myText"></input>
+          <button>Display Text</button>
+        </div>
+        <div className={styles.section}>
+          <p>"myText"</p>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Counter;
+export default App;
