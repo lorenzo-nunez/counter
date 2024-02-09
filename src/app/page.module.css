@@ -1,13 +1,15 @@
 .container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
 .section {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .increment {
@@ -21,6 +23,7 @@
 }
 
 .input[type=text] {
-    width:fit-content
+    width:fit-content;
+    
 
 }

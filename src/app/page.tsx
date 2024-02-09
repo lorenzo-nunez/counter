@@ -1,14 +1,11 @@
 "use client";
 import Counter from "./counter";
-import TextInput from "./text-input";
+import TextInput from "./TextInput";
+import styles from "./page.module.css";
+import Navbar from "./Navbar";
 
 function App() {
-  return (
-    <>
-      <Counter />
-      <TextInput />
-    </>
-  );
+  return <Navbar></Navbar>;
 }
 
 export default App;
